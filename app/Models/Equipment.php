@@ -19,4 +19,8 @@ class Equipment extends Model
     {
         return $this->belongsTo(Recipe::class);
     }
+<<<<<<< HEAD
+=======
+    protected $table = 'equipments';
+>>>>>>> 76159c0 (Pesan commit Anda)
 }

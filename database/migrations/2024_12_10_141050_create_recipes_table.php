@@ -15,9 +15,15 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('name', length:100); // Nama Dish
+
             $table->enum('cuisine', ['Western', 'Asian', 'Middle Eastern', 'African', 'Latin']); // Asal Dish
             $table->text('description'); // Deskripsi Dish
             $table->enum('meal_course', ['Dessert', 'Main Course', 'Appetizer', 'Snack']); // Tipe Dish
+
+            $table->enum('cuisine', ['Western', 'Asian', 'Middle Eastern', 'African']); // Asal Dish
+            $table->text('description'); // Deskripsi Dish
+            $table->enum('meal_course', ['Dessert', 'Main Course', 'Appetizer']); // Tipe Dish
+
             $table->integer('time'); // Waktu memasak
             $table->string('origin', length:100); // Negara asal Dish
             $table->enum('difficulty', ['Easy', 'Medium', 'Hard']); // Tingkat kesulitan

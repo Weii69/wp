@@ -32,6 +32,10 @@ class Recipe extends Model
         'time',
         'origin',
         'difficulty',
+<<<<<<< HEAD
         'image'
+=======
+        'image',
+>>>>>>> 76159c0 (Pesan commit Anda)
     ];
 }
